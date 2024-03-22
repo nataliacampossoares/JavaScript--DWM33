@@ -9,6 +9,7 @@ Há três formas principais de como declarar variáveis no JavaScript: **var**, 
  ### Var
   A var pode ser usada para declarar uma variável que é acessível em todo o programa e pode ser alterada.
   ```JavaScript
+  //Código 1
   var nome = "Natália Campos" ;
   console.log(nome)
   ```
@@ -16,13 +17,15 @@ Há três formas principais de como declarar variáveis no JavaScript: **var**, 
   ### Const
   O const possui um valor fixo, inalterável. É usado dentro do bloco onde foi declarada.
   ```JavaScript
-  var nome = "Natália Campos"
+  //Código 2
+  const nome = "Natália Campos"
   console.log(nome)
   ```
 
 ### Let
    O let permite declaração de variáveis limitadas ao escopo de bloco. Isso significa que a variável declarada com let só é acessível dentro do bloco onde foi declarada.
    ```JavaScript
+   //Código 3
    let nome = "Natália Campos"
    console.log(nome)
    ```
@@ -35,6 +38,7 @@ Há três tipos de escopos: Global, Função e Bloco.
  Variáveis declaradas fora de qualquer função ou bloco de código têm escopo global e podem ser acessadas de qualquer lugar no código, a menos que sejam sombreadas por variáveis locais dentro de funções ou blocos.
 
  ```JavaScript
+ //Código 4
  var nome = "Natália Campos"
  function ola() {
     console.log("Olá, " + nome)
@@ -46,6 +50,7 @@ ola()
   Variáveis declaradas dentro de uma função têm escopo local e só podem ser acessadas dentro da própria função. Variáveis declaradas com let e const também têm escopo local de bloco.
 
 ```JavaScript
+//Código 5
 function ola() {
     let nome = "Natália Campos"
     console.log("Olá, " + nome)
@@ -56,6 +61,7 @@ ola()
 ### Escopo de Bloco
 O escopo de bloco em JavaScript se refere à visibilidade e acessibilidade de variáveis dentro de um bloco de código delimitado por chaves {}. Um bloco de código pode ser uma estrutura condicional if, um loop for, uma função, ou simplesmente um bloco isolado.
 ```JavaScript
+//Código 6
 function exemplo() {
     if (true) {
         let mensagem = "Olá, mundo!"
