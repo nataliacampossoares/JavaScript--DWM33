@@ -62,12 +62,67 @@ Em JavaScript, um array é um tipo de objeto usado para armazenar múltiplos val
 let array = [1, 2, 3, 4, 5];
 ```
 
-- **Push**: Adiciona um ou mais elementos ao final do array e retorna o novo comprimento do array.
+Para acessar um elemento dentro dessa lista:
+```JavaScript
+console.log(array[0]) //Acessa o primeiro elemento
+```
+
+- **Push**: adiciona um ou mais elementos ao final do array e retorna o novo comprimento do array.
 ```JavaScript
 //Código 14
 let frutas = ['maçã', 'banana'];
 let novoComprimento = frutas.push('laranja', 'morango');
 console.log(frutas); // ['maçã', 'banana', 'laranja', 'morango']
 console.log(novoComprimento); // 4
-
 ```
+
+- **Pop**: remove o último elemento da lista.
+```JavaScript
+//Código 15
+let array = ['a', 'b', 'c', 'd'];
+let elementoRemovido = array.pop();
+console.log(array); // ['a', 'b', 'c']
+console.log(elementoRemovido); // 'd'
+```
+- **Shift**: remove o primeiro elemento do array e retorna esse elemento.
+```JavaScript
+//Código 16
+let meuArray = ['a', 'b', 'c', 'd'];
+let primeiroElemento = meuArray.shift();
+console.log(meuArray);
+console.log(primeiroElemento);
+```
+
+- **Unshift**: adiciona um ou mais elementos ao início do array e retorna o novo comprimento do array.
+```JavaScript
+//Código 17
+let meuArray = ['a', 'b', 'c'];
+meuArray.unshift('x', 'y');
+console.log(meuArray);
+```
+
+- **Slice**: retorna uma cópia de parte do array, selecionada a partir de um início até um fim (fim não incluído). O array original não é modificado.
+```JavaScript
+//Código 18
+let meuArray = ['a', 'b', 'c', 'd', 'e'];
+let parteDoArray = meuArray.slice(1, 4);
+console.log(parteDoArray);
+console.log(meuArray)
+```
+
+- **Splice**: adiciona ou remove elementos do array. Este método modifica o array original.
+```JavaScript
+//Código 19
+
+//Para remover
+let meuArray1 = ['a', 'b', 'c', 'd', 'e'];
+let elementosRemovidos = meuArray1.splice(2, 2); // Remove 2 elementos a partir do índice 2
+console.log(meuArray1); 
+console.log(elementosRemovidos);
+
+//Para adicionar
+let meuArray2 = ['a', 'b', 'c'];
+meuArray2.splice(1, 0, 'x', 'y'); // Adiciona 'x' e 'y' a partir do índice 1
+console.log(meuArray2); 
+```
+

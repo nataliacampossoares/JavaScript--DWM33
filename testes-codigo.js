@@ -87,10 +87,47 @@
 // console.log(frutas);
 // console.log(novasfrutas)
 
-let frutas = ['maçã', 'banana'];
-console.log(frutas)
-console.log(frutas.push()); 
-let novasfrutas = frutas
-console.log(frutas);
-console.log(novasfrutas)
+// let frutas = ['maçã', 'banana'];
+// console.log(frutas)
+// console.log(frutas.push()); 
+// let novasfrutas = frutas
+// console.log(frutas);
+// console.log(novasfrutas)
+
+// //Código 15
+// let array = ['a', 'b', 'c', 'd'];
+// let elementoRemovido = array.pop();
+// console.log(array); // ['a', 'b', 'c']
+// console.log(elementoRemovido); // 'd'
+
+// //Código 16
+// let meuArray = ['a', 'b', 'c', 'd'];
+// let primeiroElemento = meuArray.shift();
+// console.log(meuArray);
+// console.log(primeiroElemento);
+
+// //Código 17
+// let meuArray = ['a', 'b', 'c'];
+// meuArray.unshift('x', 'y');
+// console.log(meuArray);
+
+// //Código 18
+// let meuArray = ['a', 'b', 'c', 'd', 'e'];
+// let parteDoArray = meuArray.slice(1, 4);
+// console.log(parteDoArray);
+// console.log(meuArray)
+
+//Código 19
+
+// //Para remover
+// let meuArray1 = ['a', 'b', 'c', 'd', 'e'];
+// let elementosRemovidos = meuArray1.splice(2, 2); // Remove 2 elementos a partir do índice 2
+// console.log(meuArray1); 
+// console.log(elementosRemovidos);
+
+// //Para adicionar
+// let meuArray2 = ['a', 'b', 'c'];
+// meuArray2.splice(1, 0, 'x', 'y'); // Adiciona 'x' e 'y' a partir do índice 1
+// console.log(meuArray2); 
+
 
