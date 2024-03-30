@@ -39,6 +39,9 @@ console.log(!chuva); // true (NÃO lógico)
 let x = 10;
 console.log(typeof x); // "number"
 
+let notANumber = NaN;
+console.log(typeof notANumber); // "number", notANumber is a number :D 
+
 let y = "Olá, mundo!";
 console.log(typeof y); // "string"
 
